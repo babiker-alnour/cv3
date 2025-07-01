@@ -1,0 +1,132 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f4f8;
+  color: #2c3e50;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.cv-wrapper {
+  max-width: 960px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid #dce6f1;
+}
+
+/* Header */
+.cv-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background: #3498db;
+  color: #fff;
+}
+
+.profile-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.job-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Sections */
+main {
+  padding: 30px;
+}
+
+.cv-section {
+  border-left: 5px solid #3498db;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  background: #f9fcff;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.cv-section:hover {
+  background: #eef7ff;
+}
+
+.cv-section h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  background: #ecf3fa;
+  border-left: 4px solid #3498db;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Experience */
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  font-size: 1.1em;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.job-date {
+  font-size: 0.9em;
+  color: #888;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  background: #f2f2f2;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cv-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+}
